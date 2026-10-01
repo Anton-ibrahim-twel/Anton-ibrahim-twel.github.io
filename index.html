@@ -4,8 +4,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>العم طوني | صناعة وإصلاح وبيع العود</title>
-<meta name="description" content="ورشة العم طوني: صناعة العود يدوياً، إصلاحه، وبيعه.">
+<title>المقامات السبعة | انطون ابراهيم طويل - صناعة وإصلاح وبيع العود</title>
+<meta name="description" content="المقامات السبعة: ورشة انطون ابراهيم طويل لصناعة العود يدوياً وإصلاحه وبيعه.">
 <style>
 :root{
   --walnut:#241710;
@@ -43,6 +43,7 @@ header{display:flex;justify-content:space-between;align-items:center;padding:1re
 /* hero */
 .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center;padding:2.5rem 0 4rem}
 .hero h1{font-size:clamp(2.6rem,8vw,4.8rem);color:var(--bone)}
+.owner{font-family:"Amiri",serif;font-size:1.5rem;color:var(--brass);margin-top:.4rem}
 .hero p{max-width:32ch;color:var(--muted);margin:1rem 0 1.8rem;font-size:1.2rem}
 .btns{display:flex;flex-wrap:wrap;gap:.8rem}
 .btn{
@@ -84,14 +85,15 @@ html[lang="ar"] [data-l="en"],html[lang="en"] [data-l="ar"]{display:none}
 <div class="wrap">
 
 <header>
-  <a class="brand" href="#top"><span data-l="ar">العم طوني</span><span data-l="en">Uncle Tony</span></a>
+  <a class="brand" href="#top"><span data-l="ar">المقامات السبعة</span><span data-l="en">The Seven Maqamat</span></a>
   <button id="lang" type="button" aria-label="Change language">English</button>
 </header>
 
 <main id="top">
   <div class="hero">
     <div>
-      <h1><span data-l="ar">العم طوني</span><span data-l="en">Uncle Tony</span></h1>
+      <h1><span data-l="ar">المقامات السبعة</span><span data-l="en">The Seven Maqamat</span></h1>
+      <div class="owner"><span data-l="ar">انطون ابراهيم طويل</span><span data-l="en">Anton Ibrahim Twel</span></div>
       <p>
         <span data-l="ar">نصنع العود بأيدينا، ونصلحه، ونبيعه. عود يُبنى بصبر ليعيش سنوات طويلة.</span>
         <span data-l="en">We build ouds by hand, repair them, and sell them. Made with patience, made to last for years.</span>
@@ -151,8 +153,8 @@ html[lang="ar"] [data-l="en"],html[lang="en"] [data-l="ar"]{display:none}
   <section id="about">
     <h2><span data-l="ar">عن الورشة</span><span data-l="en">About the workshop</span></h2>
     <p class="about">
-      <span data-l="ar">ورشة العم طوني مكان لصناعة العود وإصلاحه وبيعه. نهتم بالتفاصيل الصغيرة لأن الصوت الجيد يبدأ منها.</span>
-      <span data-l="en">Uncle Tony's workshop is a place where ouds are made, repaired, and sold. We care about the small details, because good sound starts there.</span>
+      <span data-l="ar">ورشة المقامات السبعة لصاحبها انطون ابراهيم طويل، مكان لصناعة العود وإصلاحه وبيعه. نهتم بالتفاصيل الصغيرة لأن الصوت الجيد يبدأ منها.</span>
+      <span data-l="en">The Seven Maqamat is the workshop of Anton Ibrahim Twel, a place where ouds are made, repaired, and sold. We care about the small details, because good sound starts there.</span>
     </p>
   </section>
 
@@ -168,7 +170,7 @@ html[lang="ar"] [data-l="en"],html[lang="en"] [data-l="ar"]{display:none}
 </main>
 
 <footer>
-  <span data-l="ar">© العم طوني</span><span data-l="en">© Uncle Tony</span>
+  <span data-l="ar">© المقامات السبعة - انطون ابراهيم طويل</span><span data-l="en">© The Seven Maqamat - Anton Ibrahim Twel</span>
 </footer>
 
 </div>
@@ -182,7 +184,7 @@ html[lang="ar"] [data-l="en"],html[lang="en"] [data-l="ar"]{display:none}
     h.lang = l;
     h.dir = l === 'ar' ? 'rtl' : 'ltr';
     btn.textContent = l === 'ar' ? 'English' : 'العربية';
-    document.title = l === 'ar' ? 'العم طوني | صناعة وإصلاح وبيع العود' : 'Uncle Tony | Oud making, repair and sales';
+    document.title = l === 'ar' ? 'المقامات السبعة | انطون ابراهيم طويل - صناعة وإصلاح وبيع العود' : 'The Seven Maqamat | Anton Ibrahim Twel - Oud making, repair and sales';
     try { localStorage.setItem('lang', l); } catch (e) {}
   }
   setLang(saved === 'en' ? 'en' : 'ar');
@@ -191,4 +193,4 @@ html[lang="ar"] [data-l="en"],html[lang="en"] [data-l="ar"]{display:none}
   });
 </script>
 </body>
-</html> 
+</html>
